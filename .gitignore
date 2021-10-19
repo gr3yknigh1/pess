@@ -1,0 +1,14 @@
+# C++ building
+build/
+*.exe
+
+# VS Code 
+.vscode/
+
+# Python 
+venv/
+**/__pycache__/
+*.pyc
+
+# Mypy
+.mypy_cache/
