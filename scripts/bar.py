@@ -18,9 +18,11 @@ class Gpp(object):
 		self.destpath = destpath
 
 	def build(self) -> int:
+		print(f"[INFO]: Starting building process of {self.filepath}. Dest path: {self.destpath}")
 		return os.system(f"g++ {self.filepath} -o {self.destpath}")
 
 	def run(self) -> int:
+		print(f"[INFO]: Running executable {self.destpath}")
 		return os.system(self.destpath)
 
 
