@@ -25,7 +25,7 @@ def nobby_fib(n: int) -> int:
     elif n == 1:
         return 2
     else:
-        return fib(n-1) + fib(n-2)
+        return nobby_fib(n-1) + nobby_fib(n-2)
 
 
 def main() -> int:
